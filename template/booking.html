@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Booking
+{% endblock %}
+
+{% block content %}
+<style>
+    .booking-container {
+        background-color: #e6f7ff; /* Light blue background color */
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="container p-3 text-center booking-container mx-auto"> <!-- Added mx-auto class for centering -->
+    <h1>Book your Events</h1><br>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn text-center">Book Now</button>
+    </form>
+</div>
+
+{% endblock %}

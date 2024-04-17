@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Grand Events 
+{% endblock %}
+
+{% block content %}
+<h2 class="text-center">Events</h2>
+<div class="container">
+    <div class="row justify-content-center"><!-- Added 'justify-content-center' class to center the content -->
+        <div class="card text-center" style="width: 18rem; display:inline-block;margin: 20px;">
+            <img src="{% static 'event-1.jpg' %}" class="card-img-top mx-auto" alt="..." height="150px" width="150px"><!-- Added 'mx-auto' class to center align the image -->
+            <div class="card-body">
+                <h5 class="card-title">Event-1</h5>
+                <p class="card-text">Best option for your Events....!! Join with Us..</p>
+            </div>
+        </div>
+
+        <div class="card text-center" style="width: 18rem; display:inline-block;margin: 20px;">
+            <img src="{% static 'event-2.jpg' %}" class="card-img-top mx-auto" alt="..." height="150px" width="150px"><!-- Added 'mx-auto' class to center align the image -->
+            <div class="card-body">
+                <h5 class="card-title">Event2</h5>
+                <p class="card-text">Best option for your Events....!! Join with Us..</p>
+            </div>
+        </div>
+
+        <div class="card text-center" style="width: 18rem; display:inline-block;margin: 20px;">
+            <img src="{% static 'event-3.jpg' %}" class="card-img-top mx-auto" alt="..." height="150px" width="150px"><!-- Added 'mx-auto' class to center align the image -->
+            <div class="card-body">
+                <h5 class="card-title">Event3</h5>
+                <p class="card-text">Best option for your Events....!! Join with Us..</p>
+            </div>
+        </div>
+
+        <div class="card text-center" style="width: 18rem; display:inline-block;margin: 20px;">
+            <img src="{% static 'event-4.jpeg' %}" class="card-img-top mx-auto" alt="..." height="150px" width="150px"><!-- Added 'mx-auto' class to center align the image -->
+            <div class="card-body">
+                <h5 class="card-title">Event4</h5>
+                <p class="card-text">Best option for your Events....!! Join with Us..</p>
+            </div>
+        </div>
+        <div class="card text-center" style="width: 18rem; display:inline-block;margin: 20px;">
+                <img src="{% static 'event-5.jpg' %}" class="card-img-top mx-auto" alt="..." height="150px" width="150px"><!-- Added 'mx-auto' class to center align the image -->
+                <div class="card-body">
+                    <h5 class="card-title">Event5</h5>
+                    <p class="card-text">Best option for your Events....!! Join with Us..</p>
+                </div>
+            </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About Us
+{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container {
+        background-color: #f7f7f7; /* Light gray background color */
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <section id="mission-vision" class="centered-section">
+                <h2>Mission and Vision</h2>
+                <p>Our mission is to provide innovative and efficient event management solutions that exceed our clients' expectations.</p>
+                <p>Our vision is to become a leading provider of event management software, known for our commitment to excellence and customer satisfaction.</p>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <section id="history" class="centered-section">
+                <h2>Company History</h2>
+                <p>Founded in [year], our company has been at the forefront of event management technology for over a decade. We started as a small team with a big idea: to revolutionize the way events are planned, organized, and executed.</p>
+                <p>Since then, we have grown into a trusted partner for event organizers worldwide, with a track record of success and innovation.</p>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <section id="team" class="centered-section">
+                <h2>Our Team</h2>
+                <p>We are a dedicated team of professionals with diverse backgrounds and expertise in event planning, software development, and customer service.</p>
+                <p>Meet our leadership team:</p>
+                <ul>
+                    <li>John Doe - CEO</li>
+                    <li>Jane Smith - COO</li>
+                    <li>Mike Johnson - CTO</li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <section id="achievements" class="centered-section">
+                <h2>Our Achievements</h2>
+                <p>Over the years, we have been honored to receive several awards and accolades for our contributions to the event management industry:</p>
+                <ul>
+                    <li>Winner of the EventTech Award for Best Event Management Software (Year)</li>
+                    <li>Recipient of the Innovation in Event Technology Award (Year)</li>
+                    <!-- Add more achievements as needed -->
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <section id="future-goals" class="centered-section">
+                <h2>Future Goals</h2>
+                <p>As we look ahead, we are committed to continuing our tradition of innovation and excellence. Our future goals include:</p>
+                <ul>
+                    <li>Expanding our product offerings to meet the evolving needs of our clients</li>
+                    <li>Enhancing our platform with new features and functionalities</li>
+                    <li>Further establishing ourselves as a global leader in event management technology</li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <section id="source-code" class="centered-section">
+                <h2>Source Code</h2>
+                <p>Our event management system is open source and available on GitHub. You can access the source code repository and contribute to the project:</p>
+                <p><a href="https://github.com/yourusername/event-management-system" target="_blank">Event Management System Repository</a></p>
+            </section>
+        </div>
+    </div>
+
+    <!-- New section about the event management system -->
+    <div class="row">
+        <div class="col-md-12">
+            <section id="event-management" class="centered-section">
+                <h2>Event Management System</h2>
+                <p>Our event management system is designed to streamline the process of planning, organizing, and executing events of all sizes. Key features of our system include:</p>
+                <ul>
+                    <li>Intuitive user interface for easy event setup and management</li>
+                    <li>Customizable templates for event invitations, registrations, and tickets</li>
+                    <li>Integrated communication tools for sending updates and reminders to attendees</li>
+                    <li>Comprehensive analytics dashboard to track event performance and attendee engagement</li>
+                    <li>Secure payment processing for ticket sales and event fees</li>
+                </ul>
+                <p>Whether you're organizing a small business meeting or a large-scale conference, our event management system provides the tools you need to ensure a successful event.</p>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}

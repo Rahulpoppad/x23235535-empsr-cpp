@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Content Page
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<style>
+    .times-roman {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    /* Remove list-style for unordered lists */
+    .paragraphs ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+</style>
+<div class="container times-roman"> <!-- Applying the Times New Roman font family -->
+    <div class="row align-items-center">
+        <div class="col-md-12">
+            <div class="text-center">
+                <h2>Welcome to the Content Page</h2>
+                <div class="paragraphs">
+                    <p><strong>Overview of the Event Management System:</strong></p>
+                    <ul>
+                        <li>Brief introduction explaining what the system is and its purpose.</li>
+                        <li>Mention how it helps in planning, organizing, and executing events.</li>
+                    </ul>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Intuitive user interface</li>
+                        <li>Customizable templates for invitations, registrations, and tickets</li>
+                        <li>Integrated communication tools for attendee updates and reminders</li>
+                        <li>Analytics dashboard for tracking event performance and engagement</li>
+                        <li>Secure payment processing for ticket sales and fees</li>
+                    </ul>
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <div class="item">
+                                <img src="{% static 'contact.jpg' %}" alt="image-center" width="30%">
+                            </div>
+                            <p><strong>Benefits:</strong></p>
+                            <ul>
+                                <li>Streamlining the event planning process</li>
+                                <li>Saving time and effort for organizers</li>
+                                <li>Improving attendee experience and engagement</li>
+                                <li>Ensuring a successful and well-managed event</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

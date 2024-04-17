@@ -7,4 +7,4 @@ urlpatterns = [
     path('events/', views.events, name='events'),
     path('booking/', views.booking, name='booking'),
     path('contact/', views.contact, name='contact'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

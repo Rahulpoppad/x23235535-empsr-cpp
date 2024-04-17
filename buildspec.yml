@@ -4,20 +4,16 @@ phases:
     runtime-versions:
       python: 3.11
     commands:
-     phases: 
-  pre_build: 
-    commands: 
-      - echo "Install App Requirements" 
-      - pip install -r requirements.txt 
-  build: 
-    commands: 
+      - echo "Install App Requirements"
+      - pip install -r requirements.txt
+  pre_build:
+    commands:
       - echo "Running Django migrations"
       - python manage.py migrate --traceback
-      - echo "Build Stage Successful! Deploying Now!
-  post_build: 
-    commands: 
-      - echo Build completed on `date` 
+      - echo "Build Stage Successful! Deploying Now!"
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
 artifacts:
   files:
     - '**/*'
-    
